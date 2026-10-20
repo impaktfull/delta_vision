@@ -1,0 +1,43 @@
+name: Bug report
+description: Something in DeltaVision does not work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Issues are public: leave out licence keys, invoice details
+        and anything from a private repository you would not want shown.
+  - type: input
+    id: version
+    attributes:
+      label: DeltaVision version
+      description: The app shows it as "Version X.Y.Z".
+      placeholder: 1.2.0
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system and version
+      placeholder: macOS 26.1
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open a repository with changed goldens
+        2. ...
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or logs
+      description: Drag images in, or paste the relevant log lines.

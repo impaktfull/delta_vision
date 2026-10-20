@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Licence or invoice question
+    url: mailto:hello@impaktfull.com
+    about: Licences and invoices are private. Mail us instead of opening an issue.
